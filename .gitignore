@@ -99,12 +99,13 @@ ENV/
 
 # mypy
 .mypy_cache/
-#model files
-analysis/c444fdff3e183daf686869692c26e00391f6773c/
-analysis/c444fdff3e183daf686869692c26e00391f6773c.descriptor.txt
-
-
+#analysis files
+analysis/
+!analysis/*py
+# data
 data/*
 !data/download.sh
 
-requirements.txt
+results/*
+!results/summary_csvs/
+!results/tss_positions.csv
